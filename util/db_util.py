@@ -1,4 +1,9 @@
-import sqlite3
+import mysql.connector
 
-def get_connection(db_name='order_management.db'):
-    return sqlite3.connect(db_name)
+def connect_db():
+    return mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="root",
+        database="order"
+    )
