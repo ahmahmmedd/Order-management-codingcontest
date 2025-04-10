@@ -88,7 +88,7 @@ class MainModule:
         print("\nCreate New Order")
         user_id = int(input("Enter your user ID: "))
 
-        product_ids = [int(pid.strip()) for pid in input("Enter product IDs to order (comma-separated): ").split(',')]
+        product_ids = [int(pid.strip()) for pid in input("Enter product IDs to order: ").split(',')]
 
         if self.order_processor.create_order(user_id, product_ids):
             print("Order created successfully!")
