@@ -6,7 +6,6 @@ class Clothing(Product):
         self._size = size
         self._color = color
 
-    # Getters and setters
     @property
     def size(self):
         return self._size
